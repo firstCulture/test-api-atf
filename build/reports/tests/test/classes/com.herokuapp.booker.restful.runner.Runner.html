@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Runner</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Runner</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.herokuapp.booker.restful.runner.html">com.herokuapp.booker.restful.runner</a> &gt; Runner</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">10.243s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">Validate booking POST and GET request and ui filter field</td>
+<td class="success">10.243s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>11:46:06.743 [Test worker] DEBUG org.springframework.context.support.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@4a1f5573
+
+@Test
+Scenario: Validate booking POST and GET request and ui filter field # src/test/resources/features/Booking.feature:4
+11:46:06.852 [Test worker] INFO com.herokuapp.booker.restful.common.context.UIScenarioContext - Initializing uI UIEnvironment [test_env]
+11:46:09.194 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {s}-&gt;https://restful-booker.herokuapp.com:443
+11:46:09.246 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to restful-booker.herokuapp.com:443
+11:46:09.838 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+11:46:09.838 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+11:46:09.838 [Test worker] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+11:46:09.838 [Test worker] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+11:46:09.838 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+11:46:09.838 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: POST /booking HTTP/1.1
+11:46:09.838 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;POST /booking HTTP/1.1[\r][\n]&quot;
+11:46:09.838 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Accept: */*[\r][\n]&quot;
+11:46:09.838 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;token: ea05090e82fc453[\r][\n]&quot;
+11:46:09.838 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Content-Type: application/json; charset=UTF-8[\r][\n]&quot;
+11:46:09.838 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Content-Length: 214[\r][\n]&quot;
+11:46:09.838 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Host: restful-booker.herokuapp.com[\r][\n]&quot;
+11:46:09.838 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+11:46:09.838 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_191)[\r][\n]&quot;
+11:46:09.838 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+11:46:09.838 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;[\r][\n]&quot;
+11:46:09.838 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; POST /booking HTTP/1.1
+11:46:09.838 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Accept: */*
+11:46:09.838 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; token: ea05090e82fc453
+11:46:09.838 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Content-Type: application/json; charset=UTF-8
+11:46:09.838 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Content-Length: 214
+11:46:09.838 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Host: restful-booker.herokuapp.com
+11:46:09.838 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Connection: Keep-Alive
+11:46:09.838 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_191)
+11:46:09.838 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Accept-Encoding: gzip,deflate
+11:46:09.838 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;{[\n]&quot;
+11:46:09.838 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;  &quot;firstname&quot; : &quot;Jhon&quot;,[\n]&quot;
+11:46:09.838 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;  &quot;lastname&quot; : null,[\n]&quot;
+11:46:09.838 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;  &quot;totalprice&quot; : 111,[\n]&quot;
+11:46:09.838 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;  &quot;depositpaid&quot; : true,[\n]&quot;
+11:46:09.838 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;  &quot;bookingdates&quot; : {[\n]&quot;
+11:46:09.838 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;    &quot;checkin&quot; : &quot;2021-04-22&quot;,[\n]&quot;
+11:46:09.838 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;    &quot;checkout&quot; : &quot;2021-04-23&quot;[\n]&quot;
+11:46:09.838 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;  },[\n]&quot;
+11:46:09.838 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;  &quot;additionalneeds&quot; : &quot;Breakfast&quot;[\n]&quot;
+11:46:09.838 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;}&quot;
+11:46:09.979 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;HTTP/1.1 500 Internal Server Error[\r][\n]&quot;
+11:46:09.979 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;Server: Cowboy[\r][\n]&quot;
+11:46:09.979 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;Connection: keep-alive[\r][\n]&quot;
+11:46:09.979 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;X-Powered-By: Express[\r][\n]&quot;
+11:46:09.979 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;Content-Type: text/plain; charset=utf-8[\r][\n]&quot;
+11:46:09.979 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;Content-Length: 21[\r][\n]&quot;
+11:46:09.979 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;Etag: W/&quot;15-/6VXivhc2MKdLfIkLcUE47K6aH0&quot;[\r][\n]&quot;
+11:46:09.979 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;Date: Sun, 25 Apr 2021 08:46:10 GMT[\r][\n]&quot;
+11:46:09.979 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;Via: 1.1 vegur[\r][\n]&quot;
+11:46:09.979 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;[\r][\n]&quot;
+11:46:10.008 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 500 Internal Server Error
+11:46:10.008 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; HTTP/1.1 500 Internal Server Error
+11:46:10.008 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; Server: Cowboy
+11:46:10.008 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; Connection: keep-alive
+11:46:10.008 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; X-Powered-By: Express
+11:46:10.008 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; Content-Type: text/plain; charset=utf-8
+11:46:10.008 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; Content-Length: 21
+11:46:10.008 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; Etag: W/&quot;15-/6VXivhc2MKdLfIkLcUE47K6aH0&quot;
+11:46:10.008 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; Date: Sun, 25 Apr 2021 08:46:10 GMT
+11:46:10.008 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; Via: 1.1 vegur
+11:46:10.024 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+11:46:10.024 [Test worker] DEBUG com.jayway.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: text/plain; charset=utf-8
+11:46:10.024 [Test worker] DEBUG com.jayway.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+11:46:10.055 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;Internal Server Error&quot;
+11:46:10.055 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@4890787f
+11:46:10.055 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+HTTP/1.1 500 Internal Server Error
+Server: Cowboy
+Connection: keep-alive
+X-Powered-By: Express
+Content-Type: text/plain; charset=utf-8
+Content-Length: 21
+Etag: W/&quot;15-/6VXivhc2MKdLfIkLcUE47K6aH0&quot;
+Date: Sun, 25 Apr 2021 08:46:10 GMT
+Via: 1.1 vegur
+
+Internal Server Error
+  Given Make booking POST request with invalid credentials          # com.herokuapp.booker.restful.stepdef.BookingStepDef.makeBookingPostRequestWithInvalidCredentials()
+11:46:10.086 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {s}-&gt;https://restful-booker.herokuapp.com:443
+11:46:10.086 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to restful-booker.herokuapp.com:443
+11:46:10.633 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+11:46:10.633 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+11:46:10.633 [Test worker] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+11:46:10.633 [Test worker] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+11:46:10.633 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+11:46:10.633 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: POST /booking HTTP/1.1
+11:46:10.633 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;POST /booking HTTP/1.1[\r][\n]&quot;
+11:46:10.633 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Accept: */*[\r][\n]&quot;
+11:46:10.633 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;token: ea05090e82fc453[\r][\n]&quot;
+11:46:10.633 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Content-Type: application/json; charset=UTF-8[\r][\n]&quot;
+11:46:10.633 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Content-Length: 217[\r][\n]&quot;
+11:46:10.633 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Host: restful-booker.herokuapp.com[\r][\n]&quot;
+11:46:10.633 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+11:46:10.633 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_191)[\r][\n]&quot;
+11:46:10.633 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+11:46:10.633 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;[\r][\n]&quot;
+11:46:10.633 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; POST /booking HTTP/1.1
+11:46:10.633 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Accept: */*
+11:46:10.633 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; token: ea05090e82fc453
+11:46:10.633 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Content-Type: application/json; charset=UTF-8
+11:46:10.633 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Content-Length: 217
+11:46:10.633 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Host: restful-booker.herokuapp.com
+11:46:10.633 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Connection: Keep-Alive
+11:46:10.633 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_191)
+11:46:10.633 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Accept-Encoding: gzip,deflate
+11:46:10.633 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;{[\n]&quot;
+11:46:10.633 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;  &quot;firstname&quot; : &quot;Jhon&quot;,[\n]&quot;
+11:46:10.633 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;  &quot;lastname&quot; : &quot;Smith&quot;,[\n]&quot;
+11:46:10.633 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;  &quot;totalprice&quot; : 111,[\n]&quot;
+11:46:10.633 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;  &quot;depositpaid&quot; : true,[\n]&quot;
+11:46:10.633 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;  &quot;bookingdates&quot; : {[\n]&quot;
+11:46:10.633 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;    &quot;checkin&quot; : &quot;2021-04-22&quot;,[\n]&quot;
+11:46:10.633 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;    &quot;checkout&quot; : &quot;2021-04-23&quot;[\n]&quot;
+11:46:10.633 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;  },[\n]&quot;
+11:46:10.633 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;  &quot;additionalneeds&quot; : &quot;Breakfast&quot;[\n]&quot;
+11:46:10.633 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;}&quot;
+11:46:10.774 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;HTTP/1.1 200 OK[\r][\n]&quot;
+11:46:10.774 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;Server: Cowboy[\r][\n]&quot;
+11:46:10.774 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;Connection: keep-alive[\r][\n]&quot;
+11:46:10.774 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;X-Powered-By: Express[\r][\n]&quot;
+11:46:10.774 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;Content-Type: application/json; charset=utf-8[\r][\n]&quot;
+11:46:10.774 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;Content-Length: 196[\r][\n]&quot;
+11:46:10.774 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;Etag: W/&quot;c4-YmoVxh6uju0kdoIlReq8qgZxZpo&quot;[\r][\n]&quot;
+11:46:10.774 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;Date: Sun, 25 Apr 2021 08:46:11 GMT[\r][\n]&quot;
+11:46:10.774 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;Via: 1.1 vegur[\r][\n]&quot;
+11:46:10.774 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;[\r][\n]&quot;
+11:46:10.774 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+11:46:10.774 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; HTTP/1.1 200 OK
+11:46:10.774 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; Server: Cowboy
+11:46:10.774 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; Connection: keep-alive
+11:46:10.774 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; X-Powered-By: Express
+11:46:10.774 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; Content-Type: application/json; charset=utf-8
+11:46:10.774 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; Content-Length: 196
+11:46:10.774 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; Etag: W/&quot;c4-YmoVxh6uju0kdoIlReq8qgZxZpo&quot;
+11:46:10.774 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; Date: Sun, 25 Apr 2021 08:46:11 GMT
+11:46:10.774 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; Via: 1.1 vegur
+11:46:10.774 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+11:46:10.774 [Test worker] DEBUG com.jayway.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+11:46:10.774 [Test worker] DEBUG com.jayway.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+11:46:10.774 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;{&quot;bookingid&quot;:20,&quot;booking&quot;:{&quot;firstname&quot;:&quot;Jhon&quot;,&quot;lastname&quot;:&quot;Smith&quot;,&quot;totalprice&quot;:111,&quot;depositpaid&quot;:true,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2021-04-22&quot;,&quot;checkout&quot;:&quot;2021-04-23&quot;},&quot;additionalneeds&quot;:&quot;Breakfast&quot;}}&quot;
+11:46:10.774 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@41c17ef
+11:46:10.774 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+HTTP/1.1 200 OK
+Server: Cowboy
+Connection: keep-alive
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 196
+Etag: W/&quot;c4-YmoVxh6uju0kdoIlReq8qgZxZpo&quot;
+Date: Sun, 25 Apr 2021 08:46:11 GMT
+Via: 1.1 vegur
+
+{
+    &quot;bookingid&quot;: 20,
+    &quot;booking&quot;: {
+        &quot;firstname&quot;: &quot;Jhon&quot;,
+        &quot;lastname&quot;: &quot;Smith&quot;,
+        &quot;totalprice&quot;: 111,
+        &quot;depositpaid&quot;: true,
+        &quot;bookingdates&quot;: {
+            &quot;checkin&quot;: &quot;2021-04-22&quot;,
+            &quot;checkout&quot;: &quot;2021-04-23&quot;
+        },
+        &quot;additionalneeds&quot;: &quot;Breakfast&quot;
+    }
+}
+  And Make POST request that creates a new booking                  # com.herokuapp.booker.restful.stepdef.BookingStepDef.makePOSTRequestThatCreatesANewBooking()
+11:46:10.821 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {s}-&gt;https://restful-booker.herokuapp.com:443
+11:46:10.821 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to restful-booker.herokuapp.com:443
+11:46:11.352 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+11:46:11.352 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+11:46:11.352 [Test worker] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+11:46:11.352 [Test worker] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+11:46:11.352 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+11:46:11.352 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /booking/20 HTTP/1.1
+11:46:11.352 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;GET /booking/20 HTTP/1.1[\r][\n]&quot;
+11:46:11.368 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Content-Type: application/json; charset=UTF-8[\r][\n]&quot;
+11:46:11.368 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Accept: */*[\r][\n]&quot;
+11:46:11.368 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;token: ea05090e82fc453[\r][\n]&quot;
+11:46:11.368 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Content-Length: 0[\r][\n]&quot;
+11:46:11.368 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Host: restful-booker.herokuapp.com[\r][\n]&quot;
+11:46:11.368 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+11:46:11.368 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_191)[\r][\n]&quot;
+11:46:11.368 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+11:46:11.368 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;[\r][\n]&quot;
+11:46:11.368 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; GET /booking/20 HTTP/1.1
+11:46:11.368 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Content-Type: application/json; charset=UTF-8
+11:46:11.368 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Accept: */*
+11:46:11.368 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; token: ea05090e82fc453
+11:46:11.368 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Content-Length: 0
+11:46:11.368 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Host: restful-booker.herokuapp.com
+11:46:11.368 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Connection: Keep-Alive
+11:46:11.368 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_191)
+11:46:11.368 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Accept-Encoding: gzip,deflate
+11:46:11.508 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;HTTP/1.1 200 OK[\r][\n]&quot;
+11:46:11.508 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;Server: Cowboy[\r][\n]&quot;
+11:46:11.508 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;Connection: keep-alive[\r][\n]&quot;
+11:46:11.508 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;X-Powered-By: Express[\r][\n]&quot;
+11:46:11.508 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;Content-Type: application/json; charset=utf-8[\r][\n]&quot;
+11:46:11.508 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;Content-Length: 169[\r][\n]&quot;
+11:46:11.508 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;Etag: W/&quot;a9-4H+vKJ4Os+LVd/+NnnC6ROFxkU4&quot;[\r][\n]&quot;
+11:46:11.508 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;Date: Sun, 25 Apr 2021 08:46:12 GMT[\r][\n]&quot;
+11:46:11.508 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;Via: 1.1 vegur[\r][\n]&quot;
+11:46:11.508 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;[\r][\n]&quot;
+11:46:11.508 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+11:46:11.508 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; HTTP/1.1 200 OK
+11:46:11.508 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; Server: Cowboy
+11:46:11.508 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; Connection: keep-alive
+11:46:11.508 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; X-Powered-By: Express
+11:46:11.508 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; Content-Type: application/json; charset=utf-8
+11:46:11.508 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; Content-Length: 169
+11:46:11.508 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; Etag: W/&quot;a9-4H+vKJ4Os+LVd/+NnnC6ROFxkU4&quot;
+11:46:11.508 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; Date: Sun, 25 Apr 2021 08:46:12 GMT
+11:46:11.508 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; Via: 1.1 vegur
+11:46:11.508 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+11:46:11.508 [Test worker] DEBUG com.jayway.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+11:46:11.508 [Test worker] DEBUG com.jayway.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+11:46:11.508 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;{&quot;firstname&quot;:&quot;Jhon&quot;,&quot;lastname&quot;:&quot;Smith&quot;,&quot;totalprice&quot;:111,&quot;depositpaid&quot;:true,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2021-04-22&quot;,&quot;checkout&quot;:&quot;2021-04-23&quot;},&quot;additionalneeds&quot;:&quot;Breakfast&quot;}&quot;
+11:46:11.508 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@6abeae05
+11:46:11.508 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+HTTP/1.1 200 OK
+Server: Cowboy
+Connection: keep-alive
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 169
+Etag: W/&quot;a9-4H+vKJ4Os+LVd/+NnnC6ROFxkU4&quot;
+Date: Sun, 25 Apr 2021 08:46:12 GMT
+Via: 1.1 vegur
+
+{
+    &quot;firstname&quot;: &quot;Jhon&quot;,
+    &quot;lastname&quot;: &quot;Smith&quot;,
+    &quot;totalprice&quot;: 111,
+    &quot;depositpaid&quot;: true,
+    &quot;bookingdates&quot;: {
+        &quot;checkin&quot;: &quot;2021-04-22&quot;,
+        &quot;checkout&quot;: &quot;2021-04-23&quot;
+    },
+    &quot;additionalneeds&quot;: &quot;Breakfast&quot;
+}
+  And Make GET request with booking id from made POST request       # com.herokuapp.booker.restful.stepdef.BookingStepDef.makeGETRequestWithBookingIdFromMadePOSTRequest()
+  When User opens index page                                        # com.herokuapp.booker.restful.stepdef.CommonStepDef.userOpensIndexPage()
+  And User search in the filter filed by full name                  # com.herokuapp.booker.restful.stepdef.CommonStepDef.userSearchInTheFilterFiledByFullName()
+  Then Validate that restful booker title is present                # com.herokuapp.booker.restful.stepdef.CommonStepDef.validateThatATextIsPresent()
+
+1 Scenarios (1 passed)
+6 Steps (6 passed)
+0m10,244s
+
+
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>??? 25, 2021 11:46:06 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}) on port 14137
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1619340368.486][WARNING]: This version of ChromeDriver has not been tested with Chrome version 90.
+??? 25, 2021 11:46:08 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 5.2.1</a> at 25.04.2021 11:46:16</p>
+</div>
+</div>
+</body>
+</html>

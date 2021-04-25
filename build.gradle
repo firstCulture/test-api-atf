@@ -1,0 +1,57 @@
+plugins {
+    id 'org.springframework.boot' version '2.2.1.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.8.RELEASE'
+    id 'java'
+}
+
+group 'org.example'
+version '2.9.1-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+// Versioning of dependencies
+wrapper.gradleVersion = '5.5.1'
+def cucumberVersion = '5.5.0'
+
+repositories {
+    jcenter()
+    mavenCentral()
+}
+
+dependencies {
+
+    // Used for spring configuration
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    compile group: 'org.springframework', name: 'spring-context', version: '5.2.9.RELEASE'
+    testCompile('org.springframework.boot:spring-boot-starter-test')
+
+    // Selenium
+    implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
+
+    // Used for lombok configuration
+    compile 'org.projectlombok:lombok:1.18.10'
+    annotationProcessor 'org.projectlombok:lombok:1.18.10'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.10'
+
+    // Used for logs
+    implementation group: 'org.slf4j', name: 'slf4j-api', version: '1.7.30'
+
+    // RestAssured
+    compile("com.jayway.restassured:rest-assured:2.9.0")
+    implementation group: 'org.json', name: 'json', version: '20210307'
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.12.3'
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.12.3'
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: '2.12.3'
+    compile 'com.googlecode.json-simple:json-simple:1.1.1'
+
+
+    // Cucumber
+    testImplementation "io.cucumber:cucumber-java:${cucumberVersion}"
+    implementation "io.cucumber:cucumber-junit:${cucumberVersion}"
+    testImplementation "io.cucumber:cucumber-junit:${cucumberVersion}"
+    testImplementation "io.cucumber:cucumber-spring:${cucumberVersion}"
+}
+
+test {
+    useJUnitPlatform()
+}

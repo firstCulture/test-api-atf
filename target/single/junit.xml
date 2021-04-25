@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="10.244">
+<testcase classname="Validate Booking functionality and API service" name="Validate booking POST and GET request and ui filter field" time="10.048">
+<system-out><![CDATA[Given Make booking POST request with invalid credentials....................passed
+And Make POST request that creates a new booking............................passed
+And Make GET request with booking id from made POST request.................passed
+When User opens index page..................................................passed
+And User search in the filter filed by full name............................passed
+Then Validate that restful booker title is present..........................passed
+]]></system-out>
+</testcase>
+</testsuite>

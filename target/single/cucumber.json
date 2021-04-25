@@ -1,0 +1,123 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-04-25T08:46:06.790Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1702000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.herokuapp.booker.restful.hook.Hook.initialize(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Validate booking POST and GET request and ui filter field",
+        "description": "",
+        "id": "validate-booking-functionality-and-api-service;validate-booking-post-and-get-request-and-ui-filter-field",
+        "after": [
+          {
+            "result": {
+              "duration": 604000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.herokuapp.booker.restful.hook.Hook.quit(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1532000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Make booking POST request with invalid credentials",
+            "match": {
+              "location": "com.herokuapp.booker.restful.stepdef.BookingStepDef.makeBookingPostRequestWithInvalidCredentials()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 734000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Make POST request that creates a new booking",
+            "match": {
+              "location": "com.herokuapp.booker.restful.stepdef.BookingStepDef.makePOSTRequestThatCreatesANewBooking()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 703000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Make GET request with booking id from made POST request",
+            "match": {
+              "location": "com.herokuapp.booker.restful.stepdef.BookingStepDef.makeGETRequestWithBookingIdFromMadePOSTRequest()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2144000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User opens index page",
+            "match": {
+              "location": "com.herokuapp.booker.restful.stepdef.CommonStepDef.userOpensIndexPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2488000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User search in the filter filed by full name",
+            "match": {
+              "location": "com.herokuapp.booker.restful.stepdef.CommonStepDef.userSearchInTheFilterFiledByFullName()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 91000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Validate that restful booker title is present",
+            "match": {
+              "location": "com.herokuapp.booker.restful.stepdef.CommonStepDef.validateThatATextIsPresent()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Test"
+          }
+        ]
+      }
+    ],
+    "name": "Validate Booking functionality and API service",
+    "description": "",
+    "id": "validate-booking-functionality-and-api-service",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Booking.feature",
+    "tags": []
+  }
+]
