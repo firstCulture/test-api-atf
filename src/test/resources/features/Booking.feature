@@ -9,3 +9,5 @@ Feature: Validate Booking functionality and API service
     And User search in the filter filed by full name
     Then Validate that restful booker title is present
 
+
+
